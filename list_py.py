@@ -10,3 +10,13 @@ Original file is located at
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
 thislist[1:3] = ["blackcurrant", "watermelon"]
 print(thislist)
+
+import numpy as np
+ 
+def fun(start, end, step):
+    num = np.linspace(start, end,(end-start)
+                      *int(1/step)+1).tolist()
+    return [round(i, 2) for i in num]
+     
+ 
+print(fun(1,5,0.5))
